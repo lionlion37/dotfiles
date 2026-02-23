@@ -4,9 +4,13 @@ return {
     lazy = false,
   },
   {
+    "nickkadutskyi/jb.nvim",
+    lazy = false,
+  },
+  {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "yorumi",
+      colorscheme = "jb",
     },
   },
 }
