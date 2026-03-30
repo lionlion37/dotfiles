@@ -4,8 +4,9 @@ Personal dotfiles managed with Git, following the Atlassian bare-repo workflow.
 
 ## What is currently tracked
 
-- `.bashrc`
 - Neovim config in `.config/nvim/` (LazyVim-based setup, custom `lua/config/*`, and `lua/plugins/colorscheme.lua`)
+- Kitty config in `.config/kitty/`
+- Sway WM config in `.config/sway/` together with waybar config in `.config/waybar/`
 
 ## Setup on a new machine
 
