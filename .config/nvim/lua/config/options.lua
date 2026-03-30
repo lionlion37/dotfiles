@@ -4,6 +4,7 @@
 
 -- VimTeX
 vim.g.vimtex_compiler_method = "latexmk"
+vim.g.lvimtex_quickfix_mode = 0
 
 vim.g.vimtex_compiler_latexmk = {
   executable = "latexmk",
@@ -18,9 +19,13 @@ vim.g.vimtex_compiler_latexmk = {
   },
 }
 
+-- Disable autoformat and autolint by default
+vim.g.autoformat = false
+vim.g.autolint = false
+
 -- Viewer
 vim.g.vimtex_view_method = "general"
-vim.g.vimtex_view_general_viewer = "SumatraPDF"
+vim.g.vimtex_view_general_viewer = "zathura"
 
 -- biber (fine)
 vim.g.vimtex_bib_backend = "biber"
