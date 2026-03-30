@@ -38,7 +38,7 @@ set $opacity_opaque 1.0
 set $opacity_translucent 0.9
 for_window [class=".*"] opacity $opacity_translucent
 for_window [app_id=".*"] opacity $opacity_translucent
-for_window [app_id="zen"] opacity $opacity_opaque
+for_window [app_id="firefox"] opacity $opacity_opaque
 for_window [class="(?i).*zen.*"] opacity $opacity_opaque
 
 # Blur requires swayfx (not supported by vanilla sway)
@@ -46,6 +46,7 @@ blur enable
 blur_xray disable
 blur_passes 3
 blur_radius 6
+corner_radius 8
 
 set $gnome-schema org.gnome.desktop.interface
 # exec_always gsettings set $gnome-schema gtk-theme 'Arc-Dark'
@@ -65,9 +66,7 @@ font JetBrains Nerd Font 10
 
 ### Output configuration
 #
-# Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-# Requires: desktop-backgrounds-compat, swaybg, jxl-pixbuf-loader
-output * bg /usr/share/backgrounds/dark_atoms.jpg fill
+# Wallpaper is managed by Waypaper/swaybg.
 #
 # Example configuration:
 #
