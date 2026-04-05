@@ -8,16 +8,20 @@
 }
 
 window#waybar {
-  background: rgba(24, 24, 27, 0.49);
+  background: rgba(42, 42, 46, 0.34);
+  background-image: none;
   color: #f4f4f5;
 }
 
 #workspaces,
 #window,
+#mode,
 #pulseaudio,
 #backlight,
 #cpu,
 #memory,
+#custom-idle-toggle,
+#custom-power,
 #custom-power-profile,
 #battery,
 #network,
@@ -27,6 +31,7 @@ window#waybar {
   padding: 3px 10px;
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.04);
+  background-image: none;
 }
 
 #workspaces {
@@ -71,4 +76,24 @@ window#waybar.empty #window {
   min-width: 72px;
   padding-left: 8px;
   padding-right: 10px;
+}
+
+#custom-power {
+  min-width: 18px;
+  padding-left: 11px;
+  padding-right: 11px;
+  color: #18181b;
+  background: #f4f4f5;
+}
+
+#custom-power:hover {
+  background: #ffffff;
+}
+
+#custom-idle-toggle.enabled {
+  color: #f4f4f5;
+}
+
+#custom-idle-toggle.disabled {
+  color: #a1a1aa;
 }
